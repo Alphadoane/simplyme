@@ -1,16 +1,78 @@
-# React + Vite
+# SimplyMe - Professional Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A premium, systems-oriented personal marketing website built for Doane Wellingtone. This portfolio is designed to showcase expertise in backend architecture, intelligent systems, and embedded development.
 
-Currently, two official plugins are available:
+**Live Link:** [Add your deployed URL here]
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tech Stack
 
-## React Compiler
+- **Frontend**: React (Vite)
+- **Styling**: Vanilla CSS (Custom Design System)
+- **Icons/Media**: SVG, Custom Graphics
+- **Architecture**: Component-based modular design
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Key Features
 
-## Expanding the ESLint configuration
+- **Project Showcase**: Detailed cards for ICMS, Jarvis AI, and other systems projects with direct GitHub links.
+- **Systems Thinking Section**: Highlights architectural philosophy (Scalability, Fault Tolerance).
+- **SEO Optimized**: Pre-configured meta tags and Open Graph data for professional sharing.
+- **Glassmorphism UI**: Modern, premium dark-themed design.
+- **Direct CV Download**: Integrated PDF resume access.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Local Development
+
+To run the project locally:
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/Alphadoane/simplyme.git
+   cd simplyme
+   ```
+
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**:
+   ```bash
+   npm run dev
+   ```
+
+4. **Build for production**:
+   ```bash
+   npm run build
+   ```
+
+## 🌐 Deployment Instructions
+
+### Vercel (Recommended)
+1. Go to [Vercel](https://vercel.com).
+2. Click "Add New" -> "Project".
+3. Import this repository.
+4. Vercel will auto-detect Vite. Click **Deploy**.
+
+### Netlify
+1. Connect your GitHub to [Netlify](https://www.netlify.com).
+2. Select this repository.
+3. Build Command: `npm run build`
+4. Publish Directory: `dist`
+5. Click **Deploy**.
+
+## 📁 Project Structure
+
+```text
+├── src/
+│   ├── components/    # Reusable UI sections (Hero, About, Projects, etc.)
+│   ├── App.jsx        # Main application layout
+│   ├── index.css      # Core design tokens & global styles
+│   └── main.jsx       # Entry point
+├── public/            # Static assets (CV.pdf, Profile images)
+└── index.html         # Main HTML template (SEO configured)
+```
+
+## 👤 Author
+
+**Doane Wellingtone**  
+Software Engineer | Systems Specialist  
+[GitHub Profile](https://github.com/Alphadoane) | [Email](mailto:alphadoane@gmail.com)
