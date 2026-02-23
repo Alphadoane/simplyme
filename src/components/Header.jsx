@@ -20,7 +20,7 @@ const Header = () => {
         <div style={{ fontSize: '1.5rem', fontWeight: 700, fontFamily: 'Outfit' }}>
           DW<span className="gradient-text">.</span>
         </div>
-        <nav style={{ display: 'flex', gap: '2rem', fontSize: '0.9rem', fontWeight: 500 }}>
+        <nav className="mobile-hide" style={{ display: 'flex', gap: '2rem', fontSize: '0.9rem', fontWeight: 500 }}>
           <a href="#about" style={{ color: 'var(--text-secondary)' }}>About</a>
           <a href="#skills" style={{ color: 'var(--text-secondary)' }}>Skills</a>
           <a href="#projects" style={{ color: 'var(--text-secondary)' }}>Projects</a>

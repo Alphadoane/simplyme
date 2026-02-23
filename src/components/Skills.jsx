@@ -27,11 +27,11 @@ const Skills = () => {
     return (
         <section id="skills" className="section-padding">
             <div className="container">
-                <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
+                <div className="mobile-text-center" style={{ textAlign: 'center', marginBottom: '4rem' }}>
                     <h2 style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>Technical <span className="gradient-text">Stack.</span></h2>
                     <p style={{ color: 'var(--text-secondary)' }}>Categorized expertise across the software and hardware spectrum.</p>
                 </div>
-                <div style={{
+                <div className="mobile-grid-1" style={{
                     display: 'grid',
                     gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
                     gap: '2rem'

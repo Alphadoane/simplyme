@@ -42,14 +42,14 @@ const Footer = () => {
             borderTop: '1px solid var(--border-color)'
         }}>
             <div className="container">
-                <div style={{
+                <div className="mobile-grid-1" style={{
                     display: 'grid',
                     gridTemplateColumns: '1fr 1fr',
                     gap: '4rem',
                     marginBottom: '4rem',
                     alignItems: 'start'
                 }}>
-                    <div>
+                    <div className="mobile-text-center">
                         <h2 style={{ fontSize: '2rem', marginBottom: '1.5rem' }}>Let's Build the <span className="gradient-text">Future of Systems.</span></h2>
                         <p style={{ color: 'var(--text-secondary)', marginBottom: '2rem' }}>
                             Whether you're looking for a backend engineer, a systems designer, or just want to talk architecture,

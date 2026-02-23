@@ -52,11 +52,11 @@ const Projects = () => {
     return (
         <section id="projects" className="section-padding" style={{ background: 'var(--bg-primary)' }}>
             <div className="container">
-                <div style={{ marginBottom: '4rem' }}>
+                <div className="mobile-text-center" style={{ marginBottom: '4rem' }}>
                     <h2 style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>Selected <span className="gradient-text">Projects.</span></h2>
                     <p style={{ color: 'var(--text-secondary)' }}>A showcase of systems-oriented engineering projects.</p>
                 </div>
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))', gap: '3rem' }}>
+                <div className="mobile-grid-1" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
                     {projects.map((project, i) => (
                         <div key={i} className="glass-card" style={{ padding: '2.5rem', display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
                             <div>

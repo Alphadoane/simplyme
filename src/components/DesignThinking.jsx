@@ -10,11 +10,11 @@ const DesignThinking = () => {
     return (
         <section className="section-padding" style={{ background: 'var(--bg-secondary)' }}>
             <div className="container">
-                <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
+                <div className="mobile-text-center" style={{ textAlign: 'center', marginBottom: '4rem' }}>
                     <h2 style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>Systems & <span className="gradient-text">Architectural Thinking.</span></h2>
                     <p style={{ color: 'var(--text-secondary)' }}>How I approach building reliable software ecosystems.</p>
                 </div>
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
+                <div className="mobile-grid-1" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
                     {principles.map((p, i) => (
                         <div key={i} className="glass-card" style={{ padding: '2rem', borderTop: '4px solid var(--accent-primary)' }}>
                             <h3 style={{ fontSize: '1.25rem', marginBottom: '1rem' }}>{p.title}</h3>

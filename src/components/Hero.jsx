@@ -9,13 +9,13 @@ const Hero = () => {
             background: 'radial-gradient(circle at 50% 50%, rgba(59, 130, 246, 0.05) 0%, transparent 50%)'
         }}>
             <div className="container animate-fade-in">
-                <div style={{
+                <div className="mobile-grid-1" style={{
                     display: 'grid',
                     gridTemplateColumns: '1.2fr 0.8fr',
                     gap: '4rem',
                     alignItems: 'center'
                 }}>
-                    <div>
+                    <div className="mobile-text-center">
                         <h2 style={{
                             color: 'var(--accent-primary)',
                             fontSize: '1.1rem',

@@ -10,8 +10,8 @@ const About = () => {
     return (
         <section id="about" className="section-padding" style={{ background: 'var(--bg-secondary)' }}>
             <div className="container">
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', alignItems: 'center' }}>
-                    <div>
+                <div className="mobile-grid-1" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', alignItems: 'center' }}>
+                    <div className="mobile-text-center">
                         <h2 style={{ fontSize: '2.5rem', marginBottom: '1.5rem' }}>
                             Engineering Systems That <span className="gradient-text">Matter.</span>
                         </h2>
