@@ -1,6 +1,12 @@
 import React, { useState } from 'react';
 
 const Footer = () => {
+    // 💡 TO FIX THE "FORM NOT FOUND" ERROR:
+    // 1. Go to https://formspree.io and create a free account.
+    // 2. Create a new form and copy the "Form ID" (it looks like 'xzzbeovv').
+    // 3. Paste your Form ID in the variable below:
+    const FORMSPREE_ID = "YOUR_FORM_ID_HERE";
+
     const [state, setState] = useState({
         submitting: false,
         succeeded: false,
@@ -15,7 +21,7 @@ const Footer = () => {
         const data = new FormData(form);
 
         try {
-            const response = await fetch("https://formspree.io/f/xzzbeovv", {
+            const response = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
                 method: "POST",
                 body: data,
                 headers: {
