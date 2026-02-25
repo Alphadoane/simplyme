@@ -27,7 +27,7 @@ const Projects = () => {
             solution: "Adaptive signaling algorithms driven by real-time traffic data modeling.",
             tech: ["Python", "Django", "Data Modeling", "Optimization Algorithms"],
             highlights: "Simulated sensor input, decision engine logic, real-time optimization.",
-            githubUrl: "https://github.com/Alphadoane"
+            githubUrl: "https://github.com/Alphadoane/schoolwork.git"
         },
         {
             title: "Result Slip Management",
@@ -36,7 +36,7 @@ const Projects = () => {
             solution: "Automated grading system with role-based access and precise computation logic.",
             tech: ["Django", "PostgreSQL", "PDF Automation"],
             highlights: "Automated grade calculation, batch PDF generation, secure faculty access.",
-            githubUrl: "https://github.com/Alphadoane"
+            githubUrl: "https://github.com/Alphadoane/schoolwork.git"
         },
         {
             title: "Embedded LED Controller",
@@ -45,7 +45,7 @@ const Projects = () => {
             solution: "C-based embedded program for AVR architecture controlling hardware interrupts.",
             tech: ["Embedded C", "AVR Architecture", "Interrupt Logic"],
             highlights: "Low-level register manipulation, 2-second interval precision.",
-            githubUrl: "https://github.com/Alphadoane"
+            githubUrl: "https://github.com/Alphadoane/schoolwork.git"
         }
     ];
 
