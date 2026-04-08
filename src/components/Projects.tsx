@@ -1,7 +1,20 @@
-import React from 'react';
+import React, { FC } from 'react';
 
-const Projects = () => {
-    const projects = [
+interface Project {
+    title: string;
+    category: string;
+    problem: string;
+    solution: string;
+    role: string;
+    tech: string[];
+    decisions: string;
+    challenges: string;
+    outcome: string;
+    githubUrl: string;
+}
+
+const Projects: FC = () => {
+    const projects: Project[] = [
         {
             title: "SimplyMe (Portfolio)",
             category: "Identity System",
@@ -54,7 +67,7 @@ const Projects = () => {
                                 <span style={{
                                     color: 'var(--accent-primary)',
                                     fontSize: '0.85rem',
-                                    fontWeight: 600,
+                                    fontWeight: 600 as const,
                                     textTransform: 'uppercase',
                                     letterSpacing: '0.1rem'
                                 }}>

@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { FC } from 'react';
 
-const EngineeringThinking = () => {
-    const principles = [
+interface EngineeringPrinciple {
+    title: string;
+    desc: string;
+}
+
+const EngineeringThinking: FC = () => {
+    const principles: EngineeringPrinciple[] = [
         { title: "System Design", desc: "I break down problems into components, define data flow, and design systems that are scalable and maintainable." },
         { title: "Performance", desc: "I consider performance early—optimizing rendering, minimizing unnecessary computations, and structuring efficient data handling." },
         { title: "Problem Solving", desc: "I approach development by first understanding the problem domain, then designing solutions that are both practical and extensible." },

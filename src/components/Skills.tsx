@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { FC } from 'react';
 
-const Skills = () => {
-    const skillGroups = [
+interface SkillGroup {
+    title: string;
+    skills: string[];
+}
+
+const Skills: FC = () => {
+    const skillGroups: SkillGroup[] = [
         {
             title: "Programming",
             skills: ["C", "C++", "C#", "Python", "JavaScript"]

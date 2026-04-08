@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { FC } from 'react';
 
-const About = () => {
+const About: FC = () => {
     const points = [
         { title: "Clean Architecture", desc: "Clean, maintainable code with a strong focus on structured system design." },
         { title: "Performance", desc: "Prioritizing performance, reliability, and clear separation of concerns in every project." },

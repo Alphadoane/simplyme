@@ -1,23 +1,29 @@
-import React, { useState } from 'react';
+import React, { FC, useState, FormEvent } from 'react';
 
-const Footer = () => {
+interface FooterState {
+    submitting: boolean;
+    succeeded: boolean;
+    error: string | null;
+}
+
+const Footer: FC = () => {
     // 💡 TO FIX THE "FORM NOT FOUND" ERROR:
     // 1. Go to https://formspree.io and create a free account.
     // 2. Create a new form and copy the "Form ID" (it looks like 'xzzbeovv').
     // 3. Paste your Form ID in the variable below:
     const FORMSPREE_ID = "mreaoloa";
 
-    const [state, setState] = useState({
+    const [state, setState] = useState<FooterState>({
         submitting: false,
         succeeded: false,
         error: null
     });
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         setState({ ...state, submitting: true });
 
-        const form = e.target;
+        const form = e.currentTarget;
         const data = new FormData(form);
 
         try {
@@ -34,7 +40,7 @@ const Footer = () => {
                 form.reset();
             } else {
                 const result = await response.json();
-                setState({ submitting: false, succeeded: false, error: result.errors[0].message });
+                setState({ submitting: false, succeeded: false, error: result.errors[0]?.message || "Something went wrong." });
             }
         } catch (err) {
             setState({ submitting: false, succeeded: false, error: "Something went wrong. Please try again." });
@@ -98,7 +104,7 @@ const Footer = () => {
                                     color: 'white',
                                     outline: 'none'
                                 }} />
-                                <textarea name="message" placeholder="Message" rows="4" required style={{
+                                <textarea name="message" placeholder="Message" rows={4} required style={{
                                     background: 'rgba(255,255,255,0.05)',
                                     border: '1px solid var(--border-color)',
                                     padding: '0.8rem',

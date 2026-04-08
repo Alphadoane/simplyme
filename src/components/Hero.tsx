@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { FC } from 'react';
 
-const Hero = () => {
+const Hero: FC = () => {
     return (
         <section className="section-padding" style={{
             minHeight: '100vh',
