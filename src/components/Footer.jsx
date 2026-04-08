@@ -56,10 +56,10 @@ const Footer = () => {
                     alignItems: 'start'
                 }}>
                     <div className="mobile-text-center">
-                        <h2 style={{ fontSize: '2rem', marginBottom: '1.5rem' }}>Let's Build the <span className="gradient-text">Future of Systems.</span></h2>
-                        <p style={{ color: 'var(--text-secondary)', marginBottom: '2rem' }}>
-                            Whether you're looking for a backend engineer, a systems designer, or just want to talk architecture,
-                            feel free to reach out.
+                        <h2 style={{ fontSize: '2rem', marginBottom: '1.5rem' }}>Open to <span className="gradient-text">Opportunities.</span></h2>
+                        <p style={{ color: 'var(--text-secondary)', marginBottom: '2rem', lineHeight: '1.6' }}>
+                            I am open to opportunities where I can contribute to building meaningful and scalable systems.<br/><br/>
+                            If you're looking for a developer who thinks beyond the surface level—let’s connect.
                         </p>
                         <div style={{ display: 'flex', gap: '1.5rem' }}>
                             <a href="#" style={{ color: 'var(--accent-primary)', fontWeight: 600 }}>LinkedIn</a>

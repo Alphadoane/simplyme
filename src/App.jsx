@@ -4,7 +4,7 @@ import Hero from './components/Hero'
 import About from './components/About'
 import Skills from './components/Skills'
 import Projects from './components/Projects'
-import DesignThinking from './components/DesignThinking'
+import EngineeringThinking from './components/EngineeringThinking'
 import Blog from './components/Blog'
 import Footer from './components/Footer'
 
@@ -17,7 +17,7 @@ function App() {
         <About />
         <Skills />
         <Projects />
-        <DesignThinking />
+        <EngineeringThinking />
         <Blog />
       </main>
       <Footer />

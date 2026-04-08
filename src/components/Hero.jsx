@@ -23,10 +23,10 @@ const Hero = () => {
                             textTransform: 'uppercase',
                             marginBottom: '1rem'
                         }}>
-                            Software Engineer | Systems Specialist
+                            Doane Wellingtone
                         </h2>
                         <h1 style={{ fontSize: '4.5rem', lineHeight: 1.1, marginBottom: '1.5rem' }}>
-                            Engineering Systems That <span className="gradient-text">Solve Real Problems.</span>
+                            Fullstack Engineer building scalable <span className="gradient-text">Systems.</span>
                         </h1>
                         <p style={{
                             fontSize: '1.25rem',
@@ -34,8 +34,8 @@ const Hero = () => {
                             marginBottom: '2.5rem',
                             maxWidth: '600px'
                         }}>
-                            I'm Doane Wellingtone, a Software Engineer focused on building scalable backend architectures,
-                            intelligent systems, and embedded solutions.
+                            I design and develop applications that solve real-world problems through clean architecture, efficient data flow, and reliable user experiences. <br /><br />
+                            <strong>Focused on:</strong> System Design &bull; Backend Logic &bull; Performance Optimization
                         </p>
                         <div style={{ display: 'flex', gap: '1.5rem' }}>
                             <a href="#projects" className="btn btn-primary">

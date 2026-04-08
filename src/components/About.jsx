@@ -2,9 +2,9 @@ import React from 'react';
 
 const About = () => {
     const points = [
-        { title: "Systems Thinking", desc: "Approaching problems with an architectural first mindset, considering the interplay between hardware and software." },
-        { title: "Technical Focus", desc: "Expertise in backend systems, REST APIs, and embedded C programming for low-level hardware control." },
-        { title: "Full Lifecycle", desc: "Capable of taking a system from initial design through development to cloud or embedded deployment." }
+        { title: "Clean Architecture", desc: "Clean, maintainable code with a strong focus on structured system design." },
+        { title: "Performance", desc: "Prioritizing performance, reliability, and clear separation of concerns in every project." },
+        { title: "Fullstack Systems", desc: "Building systems where frontend UI and backend logic work seamlessly together." }
     ];
 
     return (
@@ -13,12 +13,10 @@ const About = () => {
                 <div className="mobile-grid-1" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', alignItems: 'center' }}>
                     <div className="mobile-text-center">
                         <h2 style={{ fontSize: '2.5rem', marginBottom: '1.5rem' }}>
-                            Engineering Systems That <span className="gradient-text">Matter.</span>
+                            Building Systems — <span className="gradient-text">Not Just Interfaces.</span>
                         </h2>
                         <p style={{ color: 'var(--text-secondary)', marginBottom: '2rem', fontSize: '1.1rem' }}>
-                            I am a Software Engineering student with a passion for architectural efficiency and intelligent automation.
-                            Whether it's optimizing traffic flow with Ambient Intelligence or managing student data in a
-                            high-concurrency portal, I build with scalability and reliability in mind.
+                            I am a software engineer focused on building systems. My approach to development is rooted in understanding problems deeply, designing efficient architectures, and delivering solutions that scale.
                         </p>
                         <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
                             {points.map((point, i) => (
@@ -48,10 +46,9 @@ const About = () => {
                             filter: 'blur(100px)',
                             opacity: 0.1
                         }}></div>
-                        <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem', color: 'var(--accent-secondary)' }}>Career Objective</h3>
+                        <h3 style={{ fontSize: '1.5rem', marginBottom: '1rem', color: 'var(--accent-secondary)' }}>My Philosophy</h3>
                         <p style={{ fontSize: '1.1rem', fontStyle: 'italic', color: 'var(--text-primary)' }}>
-                            "To leverage my expertise in backend architecture and embedded systems to build intelligent,
-                            real-world solutions as a Systems Engineer or Backend Developer."
+                            "I believe in creating fullstack systems where clean code, robust backend logic, and dynamic frontend experiences come together to solve real-world problems efficiently."
                         </p>
                     </div>
                 </div>
